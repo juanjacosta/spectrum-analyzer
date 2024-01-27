@@ -1,5 +1,12 @@
+import { MainWindow } from './components/MainWindow'
+import { Sidebar } from './components/Sidebar'
 import './styles/global.css'
 
 export function App() {
-  return <h1 className="text-red-600">Spectrum Analizer</h1>
+  return (
+    <div className='grid min-h-screen grid-cols-app'>
+      <Sidebar />
+      <MainWindow />
+    </div>
+  )
 }
