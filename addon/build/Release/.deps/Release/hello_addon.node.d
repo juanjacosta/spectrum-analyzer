@@ -1,1 +1,1 @@
-cmd_Release/hello_addon.node := ln -f "Release/obj.target/hello_addon.node" "Release/hello_addon.node" 2>/dev/null || (rm -rf "Release/hello_addon.node" && cp -af "Release/obj.target/hello_addon.node" "Release/hello_addon.node")
+cmd_Release/hello_addon.node := c++ -bundle -undefined dynamic_lookup -Wl,-search_paths_first -mmacosx-version-min=10.15 -arch arm64 -L./Release -stdlib=libc++  -o Release/hello_addon.node Release/obj.target/hello_addon/hello.o 

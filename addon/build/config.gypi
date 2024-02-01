@@ -21,7 +21,6 @@
     "enable_pgo_use": "false",
     "error_on_warn": "false",
     "force_dynamic_crt": 0,
-    "gas_version": "2.30",
     "host_arch": "arm64",
     "icu_data_in": "../../deps/icu-tmp/icudt72l.dat",
     "icu_endianness": "l",
@@ -31,7 +30,7 @@
     "icu_ver_major": "72",
     "is_debug": 0,
     "libdir": "lib",
-    "llvm_version": "0.0",
+    "llvm_version": "12.0",
     "napi_build_version": "8",
     "node_builtin_shareable_builtins": [
       "deps/cjs-module-lexer/lexer.js",
@@ -356,7 +355,6 @@
     "node_no_browser_globals": "false",
     "node_prefix": "/",
     "node_release_urlbase": "https://nodejs.org/download/release/",
-    "node_section_ordering_info": "",
     "node_shared": "false",
     "node_shared_brotli": "false",
     "node_shared_cares": "false",
@@ -370,7 +368,7 @@
     "node_tag": "",
     "node_target_type": "executable",
     "node_use_bundled_v8": "true",
-    "node_use_dtrace": "false",
+    "node_use_dtrace": "true",
     "node_use_etw": "false",
     "node_use_node_code_cache": "true",
     "node_use_node_snapshot": "true",
@@ -381,7 +379,7 @@
     "openssl_is_fips": "false",
     "openssl_quic": "true",
     "ossfuzz": "false",
-    "shlib_suffix": "so.108",
+    "shlib_suffix": "108.dylib",
     "single_executable_application": "true",
     "target_arch": "arm64",
     "v8_enable_31bit_smis_on_64bit_arch": 0,
@@ -402,8 +400,8 @@
     "v8_trace_maps": 0,
     "v8_use_siphash": 1,
     "want_separate_host_toolset": 0,
-    "nodedir": "/home/juand_/.cache/node-gyp/18.16.0",
-    "python": "/home/juand_/.pyenv/versions/3.10.11/bin/python3",
+    "xcode_version": "12.0",
+    "nodedir": "/Users/juan/Library/Caches/node-gyp/18.16.0",
     "standalone_static_library": 1
   }
 }

@@ -1,1 +1,0 @@
-cmd_Release/obj.target/hello_addon.node := g++ -o Release/obj.target/hello_addon.node -shared -pthread -rdynamic  -Wl,-soname=hello_addon.node -Wl,--start-group Release/obj.target/hello_addon/hello.o -Wl,--end-group 
