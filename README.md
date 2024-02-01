@@ -27,7 +27,7 @@ $ npm run dev
 ### Enter addon folder
 
 ```bash
-# Ener addon folder
+# Enter addon folder
 $ cd addon
 ```
 
@@ -43,4 +43,11 @@ $ npm install node-gyp -g
 ```bash
 # For Linux
 $ node-gyp configure build
+```
+
+### Test addon with javascript file (outside the electron environment)
+
+```bash
+# For Linux
+$ node test.js
 ```
