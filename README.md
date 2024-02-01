@@ -2,11 +2,13 @@
 
 An Electron application with React and TypeScript
 
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
 ## Project Setup
+
+### Node version
+
+```bash
+$ nvm use
+```
 
 ### Install
 
@@ -20,15 +22,25 @@ $ npm install
 $ npm run dev
 ```
 
-### Build
+## Test addon
+
+### Enter addon folder
 
 ```bash
-# For windows
-$ npm run build:win
+# Ener addon folder
+$ cd addon
+```
 
+### Install build tools (the system must have installed Python, the make tool and a C/C++ toolchain)
+
+```bash
 # For macOS
-$ npm run build:mac
+$ npm install node-gyp -g
+```
 
+### Build addon
+
+```bash
 # For Linux
-$ npm run build:linux
+$ node-gyp configure build
 ```
