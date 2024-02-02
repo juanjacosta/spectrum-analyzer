@@ -16,7 +16,7 @@ function createWindow(): void {
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false,
-      nodeIntegration: true,
+      // nodeIntegration: true,
       // contextIsolation: false,
     },
   })
@@ -25,7 +25,7 @@ function createWindow(): void {
     console.log('test-node-addon')
     console.log(addon.hello())
 
-    return 'Hello addon world'
+    return 'Test addon'
   })
 
   mainWindow.on('ready-to-show', () => {
