@@ -23,9 +23,9 @@ function createWindow(): void {
 
   ipcMain.handle('test-addon', async () => {
     console.log('test-node-addon')
-    console.log(addon.hello())
+    // console.log(addon.hello())
 
-    return 'Test addon'
+    return addon.hello()
   })
 
   mainWindow.on('ready-to-show', () => {
