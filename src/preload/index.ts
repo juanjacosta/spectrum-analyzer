@@ -11,7 +11,7 @@ declare global {
 // Custom APIs for renderer
 const api = {
   testAddon() {
-    return ipcRenderer.send('test-addon')
+    return ipcRenderer.invoke('test-addon')
   },
 }
 

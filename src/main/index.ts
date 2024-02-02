@@ -16,14 +16,16 @@ function createWindow(): void {
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false,
-      // nodeIntegration: true,
+      nodeIntegration: true,
       // contextIsolation: false,
     },
   })
 
-  ipcMain.on('test-addon', () => {
+  ipcMain.handle('test-addon', async () => {
     console.log('test-node-addon')
     console.log(addon.hello())
+
+    return 'Hello addon world'
   })
 
   mainWindow.on('ready-to-show', () => {
